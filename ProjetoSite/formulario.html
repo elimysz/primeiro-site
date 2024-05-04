@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <!-- meta - informações ao navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Emily">
+    <meta name="assunto" content="Formulário de pesquisa">
+    <title>Página sobre Rock</title>
+    <link rel="icon" href="IMG/icons8-música-rock-48.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./CSS/estilo.css">
+
+</head>
+
+
+<body>
+    <header class="header">
+    <!-- cabeçalho da página -->
+    <h1> Página 2 - Formulário de pesquisa 📌</h1>
+
+    <!-- menu de navegação -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+                 <h2>Preencha o formulário:</h2>
+        <form action="/submit-form">
+
+            <fieldset>
+                <legend>Informações gerais</legend><br>
+
+                <label id="nome">nome:</label>
+                <input type="text" name="nome" id="name" placeholder="informe seu nome" autofocus><br><br>
+
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" placeholder="informe seu email" ><br><br>
+
+                <label for="dataNascimento">data de nasc.:</label>
+                <input type="date" name="dataNascimento" id="dataNascimento"><br><br>
+
+                <label for="idade">idade:</label>
+                <input type="number" name="idade" id="idade"
+                min="12" max="100" placeholder="informe sua idade"><br><br>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+                <legend>Informações sobre a banda favorita</legend><br>
+
+                <label id="banda-favorita">Qual sua banda favorita?</label>
+                <input type="text" name="bandafavorita" id="bandafavorita" placeholder="ex: capital inicial"><br><br>
+
+
+                <p>Qual o seu gênero de rock favorito?</p>
+                <select name="gênero favorito"
+                id="genero-favorito">
+                    <option value="Rock">Rock</option>
+                    <option value="Alternativo">Alternativo</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Indie">Indie</option>
+                    <option value="Punk">Punk</option>
+                    <option value="Clássico">Clássico</option>
+                    <option value="Outro">Outro</option>
+                </select>  
+
+
+
+                    <p>Qual é a sua plataforma de streaming de música favorita?</p>
+
+                <input type="radio" name="plataformasp" id="spotify" value="spotify"> <label for="spotify">spotify</label>
+
+                <input type="radio" name="plataformasp" id="deezer" value="deezer"> <label for="deezer">deezer</label>
+
+                <input type="radio" name="plataformasp" id="applemusic" value="applemusic"> <label for="applemusic">applemusic</label>
+                
+
+                    <p>Qual dessas bandas de rock nacional você conhece</p>
+
+                <input type="checkbox" name="bandas" id="legiaoUrbana" value="legiaoUrbana"> 
+                <label for="legiaoUrbana"> Legião Urbana </label><br>
+
+                <input type="checkbox" name="bandas" id="titas" value="titas"> 
+                <label for="titas"> Titãs </label><br>
+
+                 <input type="checkbox" name="bandas" id="paralamas" value="paralamas"> 
+                <label for="paralamas"> Paralamas do Sucesso </label><br>
+
+                <input type="checkbox" name="bandas" id="charliebrownjunior" value="charliebrownjunior"> 
+                <label for="charliebrownjunior"> Charlie Brown Junior </label><br>
+
+                <input type="checkbox" name="bandas" id="capitalInicial" value="capitalInicial"> 
+                <label for="capitalInicial"> Capital Inicial </label><br>
+
+            </fieldset>
+     
+            <br><br>
+
+            <fieldset>
+
+                <legend>Participe da nossa galeria de fotos</legend>
+                <p>Envie sua foto em um Show para adicionarmos em nossa galeria</p>
+
+                <input type="file" name="anexfoto" id="anexfoto"><br><br>
+
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva a legenda da sua foto aqui..."> </textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+        <br>
+
+        <p><a href="formulario.html">Voltar ao topo</a></p><br>
+
+    </main>
+
+        <!-- rodapé da página -->
+    <footer>
+        <p>&lt; &copy; Copyright - App - Rock Nacional &gt;</p>
+    </footer>
+
+
+</body>
+
+
+</html>
